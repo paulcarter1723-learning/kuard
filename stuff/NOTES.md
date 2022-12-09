@@ -8,3 +8,17 @@ az account show --output table
 # create cluster
 az group create --name=kuar --location=northeurope
 az aks create --resource-group=kuar --name=kuar-cluster --generate-ssh-keys
+az aks get-credentials --resource-group=kuar --name=kuar-cluster
+az aks install-cli
+
+
+# kubectl
+az aks get-credentials --resource-group=kuar --name=kuar-cluster
+
+path variables
+C:\Users\paul\.azure-kubectl
+C:\Users\paul\.azure-kubelogin
+az aks install-cli
+
+kubectl get nodes
+kubectl describe nodes aks-nodepool1-19386622-vmss000000
