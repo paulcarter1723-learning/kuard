@@ -6,7 +6,7 @@ spec:
   volumes:
     - name: "kuard-data"
       hostPath:
-        path: "/exports"
+        path: "/run/desktop/mnt/host/c/temp/kuard"
   containers:
   - name: kuard
     image: gcr.io/kuar-demo/kuard-amd64:blue
